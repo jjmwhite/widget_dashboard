@@ -11,24 +11,71 @@ html {
   flex-direction: column;
 }
 
+
+/* -----CLOCK----- */
 .clock {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 30px;
+  font-size: 40px;
   color: antiquewhite;
   margin-top: 20px;
 }
 
 .date, .time {
   display: flex;
-  margin: 15px;
+  margin: 10px;
   align-self: center;
 }
 
+
+/* -----WEATHER----- */
+.weather {
+  width: 330px;
+  background-color: mediumaquamarine;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.weather-header {
+  font-size: 35px;
+  text-align: center;
+  background-color: mediumaquamarine;
+  color: antiquewhite;
+  border-radius: 30px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.weather-data {
+  list-style: none;
+  color: rgb(50, 207, 202);
+  font-size: 30px;
+  padding: 0;
+}
+
+.weather-data > li {
+  background-color: antiquewhite;
+  border-radius: 30px;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.seeking-loc {
+  font-size: 20px;
+  background-color: mediumaquamarine;
+  color: antiquewhite;
+  position: relative;
+  left: 28%;
+}
+
+/* -----TABS----- */
 .tabs-section {
   display: flex;
-  width: 300px;
+  width: 330px;
   flex-direction: column;
   justify-content: center;
   margin-top: 30px;
@@ -44,31 +91,34 @@ html {
   float: left;
   box-sizing: border-box;
   width: 80px;
-  list-style: none;
-  background-color: antiquewhite;
+  background: rgba(255, 255, 255, 0.5);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   padding: 3px;
   border-top: 1px solid #4ba1c5;
   border-left: 1px solid #4ba1c5;
   border-right: 1px solid #4ba1c5;
+  border-bottom: 1px solid antiquewhite;
+  list-style: none;
   z-index: 2;
   font-size: 15px;
   text-align: center;
+  color: #4ba1c5;
+
 }
 
 .tab-content {
-  background-color: antiquewhite;
+  background: antiquewhite;
   height: 150px;
   padding: 20px;
   border-top-right-radius: 8px;
-  border-bottom: 1px solid #4ba1c5;
-  border-left: 1px solid #4ba1c5;
-  border-right: 1px solid #4ba1c5;
+  border: 1px solid mediumaquamarine;
   font-size: 20px;
+  color: #4ba1c5;
 }
 
 li.active {
-  border-bottom: 1px solid #4ba1c5;
+  border-bottom: 1px solid rgb(81, 233, 213);
   background-color: rgb(81, 233, 213);
 }
+
